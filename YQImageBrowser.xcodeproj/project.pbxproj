@@ -13,6 +13,14 @@
 		4D1DB48721B12CDF00127600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1DB48621B12CDF00127600 /* Assets.xcassets */; };
 		4D1DB48A21B12CDF00127600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D1DB48821B12CDF00127600 /* LaunchScreen.storyboard */; };
 		4D1DB48D21B12CDF00127600 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DB48C21B12CDF00127600 /* main.m */; };
+		4D1DB49821B12F3300127600 /* YQImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DB49621B12F3300127600 /* YQImageBrowser.m */; };
+		4D1DB49921B12F3300127600 /* YQImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DB49721B12F3300127600 /* YQImageView.m */; };
+		4D1F719E21B532EC00503692 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F719821B532EC00503692 /* 01.jpg */; };
+		4D1F719F21B532EC00503692 /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F719921B532EC00503692 /* 03.jpg */; };
+		4D1F71A021B532EC00503692 /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F719A21B532EC00503692 /* 02.jpg */; };
+		4D1F71A121B532EC00503692 /* 06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F719B21B532EC00503692 /* 06.jpg */; };
+		4D1F71A221B532EC00503692 /* 05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F719C21B532EC00503692 /* 05.jpg */; };
+		4D1F71A321B532EC00503692 /* 04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D1F719D21B532EC00503692 /* 04.jpg */; };
 		A2315897EC25FF88E3622F67 /* libPods-YQImageBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAD7B061F3D066F7E49CD2F /* libPods-YQImageBrowser.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +37,16 @@
 		4D1DB48921B12CDF00127600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D1DB48B21B12CDF00127600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D1DB48C21B12CDF00127600 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D1DB49421B12F3300127600 /* YQImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQImageBrowser.h; sourceTree = "<group>"; };
+		4D1DB49521B12F3300127600 /* YQImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQImageView.h; sourceTree = "<group>"; };
+		4D1DB49621B12F3300127600 /* YQImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQImageBrowser.m; sourceTree = "<group>"; };
+		4D1DB49721B12F3300127600 /* YQImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQImageView.m; sourceTree = "<group>"; };
+		4D1F719821B532EC00503692 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		4D1F719921B532EC00503692 /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
+		4D1F719A21B532EC00503692 /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
+		4D1F719B21B532EC00503692 /* 06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 06.jpg; sourceTree = "<group>"; };
+		4D1F719C21B532EC00503692 /* 05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 05.jpg; sourceTree = "<group>"; };
+		4D1F719D21B532EC00503692 /* 04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 04.jpg; sourceTree = "<group>"; };
 		A17D6B3533157B6E9B3C78E5 /* Pods-YQImageBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQImageBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-YQImageBrowser/Pods-YQImageBrowser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +92,7 @@
 		4D1DB47C21B12CDD00127600 /* YQImageBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				4D1DB49321B12F3300127600 /* Source */,
 				4D1DB47D21B12CDD00127600 /* AppDelegate.h */,
 				4D1DB47E21B12CDD00127600 /* AppDelegate.m */,
 				4D1DB48021B12CDD00127600 /* ViewController.h */,
@@ -83,8 +102,33 @@
 				4D1DB48821B12CDF00127600 /* LaunchScreen.storyboard */,
 				4D1DB48B21B12CDF00127600 /* Info.plist */,
 				4D1DB48C21B12CDF00127600 /* main.m */,
+				4D1F719721B532EC00503692 /* Resource */,
 			);
 			path = YQImageBrowser;
+			sourceTree = "<group>";
+		};
+		4D1DB49321B12F3300127600 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4D1DB49421B12F3300127600 /* YQImageBrowser.h */,
+				4D1DB49621B12F3300127600 /* YQImageBrowser.m */,
+				4D1DB49521B12F3300127600 /* YQImageView.h */,
+				4D1DB49721B12F3300127600 /* YQImageView.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4D1F719721B532EC00503692 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4D1F719821B532EC00503692 /* 01.jpg */,
+				4D1F719A21B532EC00503692 /* 02.jpg */,
+				4D1F719921B532EC00503692 /* 03.jpg */,
+				4D1F719D21B532EC00503692 /* 04.jpg */,
+				4D1F719C21B532EC00503692 /* 05.jpg */,
+				4D1F719B21B532EC00503692 /* 06.jpg */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		CC8527DBC6A26DDF1467C32A /* Frameworks */ = {
@@ -153,8 +197,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D1F719F21B532EC00503692 /* 03.jpg in Resources */,
+				4D1F71A021B532EC00503692 /* 02.jpg in Resources */,
+				4D1F71A221B532EC00503692 /* 05.jpg in Resources */,
 				4D1DB48A21B12CDF00127600 /* LaunchScreen.storyboard in Resources */,
 				4D1DB48721B12CDF00127600 /* Assets.xcassets in Resources */,
+				4D1F71A321B532EC00503692 /* 04.jpg in Resources */,
+				4D1F719E21B532EC00503692 /* 01.jpg in Resources */,
+				4D1F71A121B532EC00503692 /* 06.jpg in Resources */,
 				4D1DB48521B12CDD00127600 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,8 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D1DB49821B12F3300127600 /* YQImageBrowser.m in Sources */,
 				4D1DB48221B12CDD00127600 /* ViewController.m in Sources */,
 				4D1DB48D21B12CDF00127600 /* main.m in Sources */,
+				4D1DB49921B12F3300127600 /* YQImageView.m in Sources */,
 				4D1DB47F21B12CDD00127600 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,7 +387,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XQKCK4THZ5;
 				INFOPLIST_FILE = YQImageBrowser/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = QuinceyYang.YQImageBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -350,7 +405,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XQKCK4THZ5;
 				INFOPLIST_FILE = YQImageBrowser/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = QuinceyYang.YQImageBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
