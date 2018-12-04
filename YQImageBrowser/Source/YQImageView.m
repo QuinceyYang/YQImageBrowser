@@ -12,9 +12,8 @@
     CGFloat _lastScale;//记录最后一次的图片放大倍数
 }
 @property (nonatomic, strong) UIScrollView * scaleScrollView;
-/**用于显示 放大缩小的 图片*/
+// 用于显示 放大缩小的 图片
 @property (nonatomic, strong) UIImageView * scaleIV;
-@property (nonatomic, assign) BOOL doubleAction;
 
 @end
 
@@ -24,7 +23,7 @@
         self.userInteractionEnabled = YES;
         UIPinchGestureRecognizer * ges = [[UIPinchGestureRecognizer alloc]initWithTarget:self action:@selector(scaleImageViewAction:)];
         ges.delegate = self;
-        _lastScale = 1.f;
+        _lastScale = 1.0;
         [self addGestureRecognizer:ges];
         UITapGestureRecognizer * singleTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(singleClick:)];
         [self addGestureRecognizer:singleTap];
@@ -58,17 +57,18 @@
     return _scaleIV;
 }
 
+#pragma mark -
 - (void)layoutSubviews{
     [super layoutSubviews];
-    
+    NSLog(@"");
 }
 
-#pragma mark ---action
+#pragma mark - action
 -(void)scaleImageViewAction:(UIPinchGestureRecognizer*)sender {
     
     CGFloat scale = sender.scale;//得到的是当前手势放大倍数
-    NSLog(@"--------%f",scale);
-    CGFloat shouldScale = _lastScale + (scale - 1);//我们需要知道的是当前手势相收缩率对于刚才手势的相对收缩 scale - 1，然后加上最后一次收缩率，为当前要展示的收缩率
+    NSLog(@"-------- scale = %f",scale);
+    CGFloat shouldScale = _lastScale + (scale - 1);//当前手势相收缩率等于刚才手势的相对收缩 scale - 1，然后加上最后一次收缩率，为当前要展示的收缩率
     [self setScaleImageWithScale:shouldScale];
     sender.scale = 1.0;//图片大小改变后设置手势scale为1
 }
@@ -120,14 +120,18 @@
     }];
    
 }
-//当达到原图大小 清除 放大的图片 和scrollview
-- (void)resetView{
-    if (!self.scaleScrollView) {
+
+/**
+ * 当达到原图大小 清除 放大的图片 和scrollview
+ */
+- (void)resetView {
+    if (!_scaleScrollView) {
         return;
     }
-    self.scaleScrollView.hidden = YES;
-    [self.scaleScrollView removeFromSuperview];
-    self.scaleScrollView = nil;
-    self.scaleIV = nil;
+    _scaleScrollView.hidden = YES;
+    [_scaleScrollView removeFromSuperview];
+    _scaleScrollView = nil;
+    _scaleIV = nil;
 }
+
 @end

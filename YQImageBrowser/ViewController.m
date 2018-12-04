@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.backgroundColor = [UIColor greenColor];
     [button setTitle:@"show" forState:UIControlStateNormal];
@@ -30,12 +31,15 @@
 
 - (void)show {
 #if 0
-    NSArray * array=@[@"http://img.xilexuan.com/download/app/20160426/t_2200245309_1342850_u1o2w2_449_600.jpg",@"http://img.xilexuan.com/download/app/20160426/t_2200245309_1342844_l3p5w9_337_600.jpg",@"http://img.xilexuan.com/download/app/20160426/t_2200245309_1342847_x6s0s8_449_600.jpg",@"http://img.xilexuan.com/download/app/20160426/t_2200245309_1342846_c6l8g1_449_600.jpg",@"http://img.xilexuan.com/download/app/20160426/t_2200245309_1342849_x3i3y1_337_600.jpg",@"http://img.xilexuan.com/download/app/20160426/t_2200245309_1342845_l8b7n9_449_600.jpg"];
+
 #else
-    NSArray *array = @[@"01.jpg",@"02.jpg",@"03.jpg",@"04.jpg",@"05.jpg",@"06.jpg",];
+    NSMutableArray *array = [NSMutableArray array];
+    for (NSUInteger i=0; i<6; i++) {
+        [array addObject:[[NSBundle mainBundle] URLForResource:[NSString stringWithFormat:@"0%ld",i+1] withExtension:@"jpg"].absoluteString];
+    }
 #endif
     
-    YQImageBrowser * browser = [[YQImageBrowser alloc] initWithImageArray:array currentIndex:0];
+    YQImageBrowser * browser = [[YQImageBrowser alloc] initWithImageArray:array currentIndex:3];
     [browser show];
 }
 

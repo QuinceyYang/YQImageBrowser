@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#ifdef DEBUG
+#define NSLog(format,args...)    NSLog(@"\n[yqing]<%@ %s line%d>" format"\n", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __PRETTY_FUNCTION__, __LINE__,##args)
+#endif
+
 @interface YQImageBrowser : UIView
 /**
  * @brief 初始化方法  图片以数组的形式传入, 需要显示的当前图片的索引
