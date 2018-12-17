@@ -48,7 +48,7 @@
     }
 #endif
     
-    YQImageBrowser * browser = [[YQImageBrowser alloc] initWithImageArray:array currentIndex:3];
+    YQImageBrowser * browser = [[YQImageBrowser alloc] initWithImageArray:array currentIndex:0];
     [browser show];
 }
 
