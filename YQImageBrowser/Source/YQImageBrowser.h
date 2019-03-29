@@ -21,4 +21,5 @@
  */
 - (instancetype)initWithImageArray:(NSArray *)imageArray currentIndex:(NSInteger)index;
 - (void)show;
+@property (nonatomic, strong) UILabel * numberLabel;
 @end

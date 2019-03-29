@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YQImageBrowser"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "一个简单易用的图片浏览器，支持图片放大缩小，双击最大化，可用于商品详情图片查看"
 
   # This description is used to generate tags and improve search results.

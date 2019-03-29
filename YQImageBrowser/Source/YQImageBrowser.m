@@ -18,7 +18,6 @@
 @property (nonatomic, strong) NSArray * imageArray;
 @property (nonatomic, assign) NSInteger index;
 @property (nonatomic, strong) UIScrollView * scrollView;
-@property (nonatomic, strong) UILabel * numberLabel;
 @end
 
 @implementation YQImageBrowser
